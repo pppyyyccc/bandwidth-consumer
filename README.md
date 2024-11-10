@@ -1,4 +1,4 @@
-# bandwidth-consumer: 简易多线程网速测试消耗工具
+# bandwidth-consumer: 简易多线程网速测试工具
 
 ## 简介
 bandwidth-consumer 是一个基于Python开发的多线程网速测试工具。它能够通过多线程并发执行对speedtest自动服务器的持续性网速测试，具有智能的错误处理机制和ID更新策略，特别适合需要长期流量消耗的场景。支持灵活配置上行、下行或同时测试两者。
