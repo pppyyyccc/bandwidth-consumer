@@ -46,6 +46,7 @@ bandwidth-consumer 是一个基于Python开发的多线程网速测试工具。�
 ### 配置示例
 
 # 基础配置（默认只测下行，四线程测速，开始时间凌晨三点到下午五点五十分，log显示东八区时间）
+```bash
 docker run -d \
   --name speedtest \
   -e TZ=Asia/Shanghai \
@@ -53,8 +54,9 @@ docker run -d \
   -e RUN_TIME=0300-1750 \
   --restart always \
   ppyycc/bandwidth-consumer:latest
-
+```
 # 完整测试配置（上下行同时测试）
+```bash
 docker run -d \
   --name speedtest \
   -e TZ=Asia/Shanghai \
@@ -63,3 +65,4 @@ docker run -d \
   -e SPEED_TEST_TYPE=both \
   --restart always \
   ppyycc/bandwidth-consumer:latest
+```
